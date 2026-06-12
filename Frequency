@@ -1,0 +1,24 @@
+public class Main {
+    public static void main(String[] args) {
+        int[] a = {6,7,3,3,2,1,6,7,7,6};
+        int n = 10;
+        boolean[] visited = new boolean[n];
+
+        for (int i = 0; i < n; i++) {
+            if (visited[i]) continue;
+
+            int count = 1;
+            for (int j = i + 1; j < n; j++) {
+                if (a[i] == a[j]) {
+                    count++;
+                    visited[j] = true;
+                }
+            }
+
+            if (count > 1) {
+                System.out.println(a[i] + " repeated " + count + " times");
+            }
+        }
+    }
+}
+
