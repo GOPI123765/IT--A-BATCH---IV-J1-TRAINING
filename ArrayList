@@ -1,0 +1,32 @@
+import java.util.ArrayList;
+
+class Main {
+    public static void main (String[] args) {
+        
+      	// Creating an ArrayList
+      	ArrayList<Integer> a = new ArrayList<>();
+      	
+      	
+      	// Adding Element in ArrayList
+      	a.add(1);
+      	a.add(2);
+      	a.add(3);
+      //	b.clone();
+      	// Remove Element in ArrayList
+      	a.remove(1);
+      	a.add(1,5);
+      	a.add(0,3);
+      	a.set(0,5);
+      	//a.clear(); //return empty square bracket
+
+      	System.out.println(a.contains(4)); // return true or false
+        
+      	// Printing ArrayList
+      	System.out.println(a);
+      	System.out.println(a.get(2));
+      	System.out.println(a.size()); // to find length count 
+      	ArrayList<Integer> b = ( ArrayList<Integer>) a.clone();
+      	System.out.println(b); // clone means copy a to b in a list
+      	
+}
+}
