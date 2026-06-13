@@ -1,0 +1,11 @@
+import java.util.*;
+public class Main{
+    public static void main(String args[]) {
+        Set<Object> a = new HashSet<>();
+        a.add("gopika");
+        a.add("kalai");
+        a.add("gopika");
+        System.out.println(a.size());
+        System.out.println(a);
+    }
+}
